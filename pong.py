@@ -1,5 +1,9 @@
-msg = "hello world"
-print(msg)
+# Import required library
+import turtle
 
-msg.capitalize
-print(msg)
+# Create screen
+sc = turtle.Screen()
+sc.title("Pong")
+sc.bgcolor("black")
+sc.setup(width=1000, height=600)
+turtle.Screen().exitonclick()

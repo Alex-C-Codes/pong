@@ -7,13 +7,13 @@ screen_width = 1000
 paddle_speed = 10
 
 
-# Moves paddle 5 pixels in direction set via setheading()
+# Moves paddle paddle_speed * pixels in direction set via setheading()
 def move_left_paddle_up():
     if left_pad.ycor() <= max_y_from_center:
         left_pad.forward(paddle_speed)
 
 
-# Moves paddle 5 pixels opposite to direction set via setheading()
+# Moves paddle paddle_speed * pixels opposite to direction set via setheading()
 def move_left_paddle_down():
     if left_pad.ycor() >= -1 * max_y_from_center:
         left_pad.backward(paddle_speed)
